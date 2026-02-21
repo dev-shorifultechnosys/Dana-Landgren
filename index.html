@@ -1,0 +1,717 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana Landgren - Natural Women's Health &amp; Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'earth-50': '#f9fbf6',
+                        'earth-100': '#f0f5e9',
+                        'earth-200': '#e0ebd4',
+                        'earth-300': '#c5dbb3',
+                        'earth-400': '#a3c58c',
+                        'earth-500': '#84ad68',
+                        'earth-600': '#668a4d',
+                        'earth-700': '#526e3e',
+                        'earth-800': '#425834',
+                        'earth-900': '#37492d',
+                        'sand-50': '#faf9f6',
+                        'sand-100': '#f5f2eb',
+                        'primary': '#84ad68',
+                        'primary-dark': '#668a4d',
+                        'secondary': '#d4a373',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'texture-pattern': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f0f5e9; }
+        ::-webkit-scrollbar-thumb { background: #84ad68; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #668a4d; }
+        .clip-leaf { clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%); }
+        .clip-organic { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        .hero-shape { border-radius: 0 0 50% 50% / 0 0 15% 15%; }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-earth-50 antialiased selection:bg-earth-300 selection:text-earth-900">
+
+    <!-- Navigation -->
+    <nav id="header" class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-earth-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-earth-500 rounded-full flex items-center justify-center text-white">
+                        <i class="fa-solid fa-leaf text-lg"></i>
+                    </div>
+                    <span class="font-serif text-2xl font-bold text-earth-900 tracking-tight">Dana Landgren</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-earth-600 font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-earth-600 font-medium transition-colors">Our Story</a>
+                    <a href="#products" class="text-gray-600 hover:text-earth-600 font-medium transition-colors">Vitamins</a>
+                    <a href="#programs" class="text-gray-600 hover:text-earth-600 font-medium transition-colors">Programs</a>
+                    <a href="#journal" class="text-gray-600 hover:text-earth-600 font-medium transition-colors">Journal</a>
+                    <a href="#contact" class="bg-earth-500 hover:bg-earth-600 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Start Journey
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-earth-600 p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-earth-50">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-earth-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute top-0 left-0 -ml-20 -mt-20 w-96 h-96 bg-sand-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-0 left-20 w-72 h-72 bg-earth-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-in-up">
+                    <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-earth-100">
+                        <span class="w-2 h-2 bg-earth-500 rounded-full animate-pulse"></span>
+                        <span class="text-sm font-medium text-earth-800">Women's Health Vitamin Specialists</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-serif font-bold text-earth-900 leading-tight">
+                        Empower Your <br>
+                        <span class="text-earth-500 italic">Women's Wellness</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-xl leading-relaxed">
+                        Premium women's health vitamins formulated with natural ingredients to support hormonal balance, energy, immunity, and overall vitality at every life stage.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#products" class="inline-flex justify-center items-center px-8 py-4 bg-earth-500 text-white rounded-full font-semibold hover:bg-earth-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Shop Women's Vitamins
+                        </a>
+                        <a href="#about" class="inline-flex justify-center items-center px-8 py-4 bg-white text-earth-700 border border-earth-200 rounded-full font-semibold hover:bg-earth-50 transition-all shadow-sm hover:shadow-md">
+                            <i class="fa-solid fa-play mr-2 text-earth-500"></i> Learn More
+                        </a>
+                    </div>
+                    
+                    <div class="pt-8 flex items-center gap-6">
+                        <div>
+                            <div class="text-3xl font-bold text-earth-700">100%</div>
+                            <div class="text-sm text-gray-500">Natural Ingredients</div>
+                        </div>
+                        <div class="h-12 w-px bg-earth-200"></div>
+                        <div>
+                            <div class="text-3xl font-bold text-earth-700">84K+</div>
+                            <div class="text-sm text-gray-500">Women Trust Us</div>
+                        </div>
+                        <div class="h-12 w-px bg-earth-200"></div>
+                        <div>
+                            <div class="text-3xl font-bold text-earth-700">4.9★</div>
+                            <div class="text-sm text-gray-500">Customer Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:h-[600px] flex items-center justify-center">
+                    <div class="relative w-full h-full max-w-lg mx-auto">
+                        <!-- Main Hero Image -->
+                        <div class="absolute inset-0 bg-earth-200 clip-organic transform rotate-3 scale-105 opacity-50"></div>
+                        <div class="relative w-full h-full overflow-hidden clip-organic shadow-2xl">
+                             <img class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-700" src="https://blog.snapdeal.com/wp-content/uploads/2023/04/shutterstock_162466109.jpg" alt="women's health vitamins and supplements in natural setting with herbs and flowers">
+                        </div>
+                        
+                        <!-- Floating Certification Badge -->
+                        <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl max-w-xs z-20">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-earth-500 rounded-full flex items-center justify-center text-white">
+                                    <i class="fa-solid fa-venus text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-gray-800">Women-Focused</p>
+                                    <p class="text-xs text-gray-500">Science-Backed Formulas</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Success Rate Card -->
+                        <div class="absolute top-10 -right-4 bg-white/95 backdrop-blur p-5 rounded-2xl shadow-xl z-20">
+                            <div class="flex flex-col items-center">
+                                <div class="text-earth-600 mb-2">
+                                    <i class="fa-solid fa-shield-heart text-3xl"></i>
+                                </div>
+                                <span class="text-2xl font-bold text-earth-700">Non-GMO</span>
+                                <span class="text-xs text-gray-500 text-center">Certified Pure</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-10 -right-10 w-32 h-32 z-0 opacity-30">
+                        <i class="fa-solid fa-spa text-8xl text-earth-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Logos -->
+    <section class="py-10 border-y border-earth-100 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-medium text-gray-400 mb-6 uppercase tracking-widest">Featured In</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fa-brands fa-vogue text-4xl"></i>
+                <i class="fa-brands fa-envira text-4xl"></i>
+                <i class="fa-brands fa-nutritionix text-4xl"></i>
+                <i class="fa-solid fa-spa text-3xl"></i>
+                <i class="fa-brands fa-pagelines text-4xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative order-2 lg:order-1">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4 mt-12">
+                        <div class="h-64 rounded-2xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Women's Vitamins">
+                        </div>
+                        <div class="h-48 rounded-2xl overflow-hidden shadow-lg bg-earth-100 flex items-center justify-center p-6">
+                            <div class="text-center">
+                                <h3 class="text-4xl font-serif font-bold text-earth-700 mb-2">15+</h3>
+                                <p class="text-sm text-earth-800">Years Formulating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-48 rounded-2xl overflow-hidden shadow-lg bg-sand-100 flex items-center justify-center p-6">
+                            <div class="text-center">
+                                <i class="fa-solid fa-flask-vial text-4xl text-earth-400 mb-3"></i>
+                                <p class="text-sm text-earth-800 font-medium">Lab Tested</p>
+                            </div>
+                        </div>
+                        <div class="h-64 rounded-2xl overflow-hidden shadow-lg">
+                            <img src="https://lovewellness.com/cdn/shop/files/05_LW_PDP_DL_Model.jpg?v=1762522177&width=1500" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Natural Ingredients">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-1 lg:order-2">
+                <span class="text-earth-500 font-semibold tracking-wider text-sm uppercase">Our Philosophy</span>
+                <h2 class="text-4xl lg:text-5xl font-serif font-bold text-earth-900 mt-3 mb-6">Supporting Women's Health at Every Stage</h2>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    We believe every woman deserves access to pure, effective vitamins designed specifically for her unique nutritional needs. Our formulas address hormonal balance, energy, bone health, and immune support.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-earth-100 flex items-center justify-center flex-shrink-0 text-earth-600">
+                            <i class="fa-solid fa-microscope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-earth-800">Science-Backed</h4>
+                            <p class="text-gray-500 mt-1">Every formula is developed with clinical research and women's health experts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-sand-100 flex items-center justify-center flex-shrink-0 text-earth-600">
+                            <i class="fa-solid fa-leaf text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-earth-800">Pure & Natural</h4>
+                            <p class="text-gray-500 mt-1">No artificial colors, flavors, or preservatives. Just clean, plant-based nutrition.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-earth-100 flex items-center justify-center flex-shrink-0 text-earth-600">
+                            <i class="fa-solid fa-heart text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-serif font-bold text-earth-800">Made for Women</h4>
+                            <p class="text-gray-500 mt-1">Addressing unique needs from menstrual health to menopause support.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <a href="#products" class="inline-flex items-center text-earth-600 font-semibold hover:text-earth-800 transition-colors group">
+                        Shop Women's Vitamins <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Stats Section with Parallax Background -->
+    <section class="relative py-24 bg-fixed bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Join our growing community of <br>wellness enthusiasts</h2>
+            <p class="text-white/90 text-lg max-w-2xl mx-auto mb-12">We've helped thousands of women rediscover their vitality through natural supplementation and lifestyle guidance.</p>
+            
+            <a href="#community" class="inline-block px-8 py-3 bg-earth-500 hover:bg-earth-400 text-white rounded-full font-semibold transition-colors shadow-lg mb-16">
+                Join Community
+            </a>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 bg-white/10 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-white/20">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">91K+</div>
+                    <div class="text-white/80 text-sm font-medium uppercase tracking-wide">Products Sold</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">84K+</div>
+                    <div class="text-white/80 text-sm font-medium uppercase tracking-wide">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">42+</div>
+                    <div class="text-white/80 text-sm font-medium uppercase tracking-wide">Countries Served</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">4.9</div>
+                    <div class="text-white/80 text-sm font-medium uppercase tracking-wide">Client Reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Services Section -->
+    <section id="products" class="py-24 bg-earth-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-earth-500 font-semibold tracking-wider text-sm uppercase">What We Offer</span>
+                <h2 class="text-4xl font-serif font-bold text-earth-900 mt-3 mb-4">Experience the Power of Nature</h2>
+                <p class="text-gray-600">From daily essentials to targeted support, explore our range of premium vitamins and wellness programs designed for the modern woman.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://m.media-amazon.com/images/I/713z75TZTEL._AC_UF350,350_QL80_.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Vitamins">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-earth-700">New Arrival</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Custom Formulations</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">Personalized vitamin packs based on your unique health profile and lifestyle needs.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Consultation">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Holistic Consultation</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">One-on-one sessions with our naturopaths to guide your wellness journey effectively.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            Book Session <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Yoga">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Lifestyle Coaching</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">Integrate mindful movement and nutrition habits for sustainable, long-term health.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            Get Started <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Detox">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Detox Programs</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">Gentle, plant-based cleansing programs to reset your system and boost energy.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            View Programs <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=799&amp;q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Meditation">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Meditation Guides</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">Audio guides and techniques to reduce stress and improve mental clarity.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            Listen Now <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/63d1b6d4fea0c592779d5e6d/63d687aeac1991a409af54e2_Womens_health_month-01-01_1200x600_crop_center.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Store">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-bold text-earth-900 mb-3">Online Store</h3>
+                        <p class="text-gray-500 mb-6 text-sm leading-relaxed">Shop our full range of ethically sourced vitamins, supplements, and wellness tools.</p>
+                        <a href="#" class="inline-flex items-center text-earth-600 font-semibold text-sm hover:text-earth-800">
+                            Shop All <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-earth-500 font-semibold tracking-wider text-sm uppercase">Why Choose Us</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold text-earth-900 mt-3 mb-6">Affordable Herbal Supplements for a Healthier Lifestyle</h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed">
+                        We prioritize quality without compromise. Our ingredients are rigorously tested, sustainably harvested, and formulated to deliver maximum bioavailability.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-5">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0 text-secondary">
+                                <i class="fa-solid fa-flask text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-earth-900 mb-2">Authentic Formulas</h4>
+                                <p class="text-gray-500 text-sm leading-relaxed">Developed by experts using time-honored herbal wisdom combined with modern science.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0 text-secondary">
+                                <i class="fa-solid fa-leaf text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-earth-900 mb-2">100% Natural Ingredients</h4>
+                                <p class="text-gray-500 text-sm leading-relaxed">Absolutely no synthetic fillers, binders, or artificial colors. Just pure plant power.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0 text-secondary">
+                                <i class="fa-solid fa-clipboard-check text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-earth-900 mb-2">Personalized Wellness Plans</h4>
+                                <p class="text-gray-500 text-sm leading-relaxed">Tailored guidance to ensure you're taking exactly what your body needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                         <img src="https://dietitiansondemand.com/wp-content/uploads/2024/10/Website-Hero-Image-Template-8.png" class="w-full h-full object-cover" alt="Ingredients">
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <!-- Floating Info Card -->
+                         <div class="absolute bottom-8 right-8 bg-earth-700/95 backdrop-blur text-white p-8 rounded-2xl max-w-xs shadow-xl">
+                             <h4 class="text-xl font-serif font-bold mb-4">Trusted by Experts</h4>
+                             <p class="text-sm text-earth-100 mb-4 leading-relaxed">"Dana Landgren's products set a new standard for purity and efficacy in the wellness industry."</p>
+                             <ul class="space-y-2 text-xs text-earth-200">
+                                 <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-earth-400"></i> Proven Results</li>
+                                 <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-earth-400"></i> Fast &amp; Reliable</li>
+                                 <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-earth-400"></i> Safe &amp; Chemical-Free</li>
+                             </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="py-24 bg-earth-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-earth-500 font-semibold tracking-wider text-sm uppercase">Benefits</span>
+                    <h2 class="text-4xl font-serif font-bold text-earth-900 mt-3 mb-6">Nature's secret for your health.</h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed">
+                        Ready to transform your health? Connect with us for a consultation or simply reach out with your questions. We're here to support your journey.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-earth-100">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-seedling text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900">Real organic herbal</h4>
+                                <p class="text-xs text-gray-500">Certified organic ingredients sourced responsibly.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-earth-100">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-user-doctor text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900">Professional Therapist</h4>
+                                <p class="text-xs text-gray-500">Access to certified health professionals.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-earth-100">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-comments text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-earth-900">Free Consultations</h4>
+                                <p class="text-xs text-gray-500">Initial 15-minute discovery call is on us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-earth-100">
+                    <h3 class="text-2xl font-serif font-bold text-earth-900 mb-6">Fill out this form for booking online.</h3>
+                    <form class="space-y-5">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Name</label>
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Company</label>
+                                <input type="text" placeholder="Company Name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Phone</label>
+                                <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Email</label>
+                                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Date</label>
+                                <input type="date" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm text-gray-500">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-sm font-semibold text-gray-600">Time</label>
+                                <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm text-gray-500">
+                                    <option>Select Time</option>
+                                    <option>09:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>02:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-600">Services</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm text-gray-500">
+                                <option>Custom Formulations</option>
+                                <option>Lifestyle Coaching</option>
+                                <option>Detox Program</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-600">Note</label>
+                            <textarea rows="3" placeholder="Any specific requirements?" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-earth-500 focus:bg-white focus:outline-none transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="button" class="w-full py-4 bg-earth-500 hover:bg-earth-600 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg mt-2">
+                            Book Now!
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <span class="text-earth-500 font-semibold tracking-wider text-sm uppercase">Testimonial</span>
+            <h2 class="text-4xl font-serif font-bold text-earth-900 mt-3">Client Feedback &amp; Reviews</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-earth-50 p-8 rounded-3xl relative text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="absolute top-0 right-0 bg-earth-500 w-12 h-12 rounded-bl-3xl rounded-tr-3xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/single-women-happier-than-men-675ac891b545d.jpg?crop=0.670xw:1.00xh;0.247xw,0&resize=640:*" alt="User" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-lg font-bold text-earth-900">Sophia Mercer</h4>
+                <p class="text-xs text-gray-500 mb-4">Jakarta</p>
+                <div class="flex justify-center text-yellow-400 text-xs mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-sm italic leading-relaxed">"Santhika's herbal supplements have truly transformed my health! I feel more energetic, balanced, and stress-free every day."</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-earth-50 p-8 rounded-3xl relative text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="absolute top-0 right-0 bg-earth-500 w-12 h-12 rounded-bl-3xl rounded-tr-3xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
+                    <img src="https://images.unsplash.com/photo-1594745561149-2211ca8c5d98?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" alt="User" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-lg font-bold text-earth-900">Sarah Hartman</h4>
+                <p class="text-xs text-gray-500 mb-4">Bandung</p>
+                <div class="flex justify-center text-yellow-400 text-xs mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-sm italic leading-relaxed">"Their personalized wellness plan helped me sleep better and feel more refreshed every morning. Highly recommended!"</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-earth-50 p-8 rounded-3xl relative text-center hover:shadow-lg transition-shadow duration-300">
+                <div class="absolute top-0 right-0 bg-earth-500 w-12 h-12 rounded-bl-3xl rounded-tr-3xl flex items-center justify-center text-white">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
+                    <img src="https://images.unsplash.com/photo-1763956391204-1df1058f0fa8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhbmRzJTIwb24lMjBmYWNlfGVufDB8fDB8fHww" alt="User" class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-lg font-bold text-earth-900">Anna Diana</h4>
+                <p class="text-xs text-gray-500 mb-4">Bali</p>
+                <div class="flex justify-center text-yellow-400 text-xs mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-sm italic leading-relaxed">"Being part of the Santhika wellness community has changed my perspective on health. I've learned so much about Ayurveda!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="bg-earth-50 border-t border-earth-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <h2 class="text-3xl font-serif font-bold text-earth-900">Start Your Wellness Journey Today!</h2>
+            <div class="flex items-center gap-4">
+                 <a href="#contact" class="px-8 py-3 bg-earth-500 hover:bg-earth-600 text-white rounded-full font-semibold transition-all shadow-md">Free Consultation</a>
+                 <div class="h-32 w-48 relative hidden md:block">
+                     <img src="https://cdn.prod.website-files.com/651a3804f37897084a2cf72c/651be21fd01f3c5e70993884_img-wellness.jpg" bg-remove="true" class="absolute -top-10 w-full h-full object-contain" alt="Herbs">
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-earth-50 pt-16 pb-8 border-t border-earth-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-earth-500 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-leaf text-sm"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold text-earth-900">Dana Landgren</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Dana Landgren brings the wisdom of nature to modern wellness, offering premium herbal supplements for a balanced and healthy life.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-earth-900 mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Custom Formulations</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Personalized Consultation</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Lifestyle Coaching</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Detox Programs</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Meditation Guides</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Online Store</li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold text-earth-900 mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Help Support</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Forum Community</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> FAQ</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Wellness Blog</li>
+                        <li class="hover:text-earth-600 cursor-pointer transition-colors"><i class="fa-solid fa-check text-earth-400 text-xs mr-2"></i> Contact us</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-earth-900 mb-4">Get in touch</h4>
+                    <div class="space-y-4 text-sm text-gray-500">
+                        <div>
+                            <p class="font-semibold text-earth-800">Consultations &amp; Order</p>
+                            <p class="text-lg text-earth-600 font-bold">(888) 4000-2424</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-earth-800">Email Support</p>
+                            <a href="mailto:hello@domain.tld" class="text-earth-600 hover:underline">hello@domain.tld</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-earth-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">Copyright © 2026 Dana Landgren. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-earth-600 flex items-center justify-center text-white hover:bg-earth-700 transition-colors"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-earth-600 flex items-center justify-center text-white hover:bg-earth-700 transition-colors"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-earth-600 flex items-center justify-center text-white hover:bg-earth-700 transition-colors"><i class="fa-brands fa-twitter text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-earth-600 flex items-center justify-center text-white hover:bg-earth-700 transition-colors"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
